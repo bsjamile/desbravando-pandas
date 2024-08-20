@@ -74,3 +74,42 @@ df.tail()#rabo/ponta
 # %%
 df.tail(2)
 # %%
+dados = [10,20,42,9,12,35,24,10,8,14,21]
+df2 = pd.DataFrame(dados)
+df2.mean()
+# %%
+df2.std()
+# %%
+df2.max()
+# %%
+datas = {
+    'nome':['Téo','Nah','Napoleao'],
+    'idade':[31,32,14]
+}
+# %%
+df3 = pd.DataFrame(datas)
+# %%
+df3.columns
+# %%
+round(df3['idade'].mean(),2)
+# %%
+df3.tail()
+# %%
+df3.head()
+# %%
+df3.describe()
+# %%
+df3['idade'].name = 'idade'
+# %%
+df3
+# %%
+df3['idade']
+# %%
+df3.Name= 'pessoas'
+# %%
+df3
+# %%
+df3.describe()
+# %%
+df3.Name
+# %%
