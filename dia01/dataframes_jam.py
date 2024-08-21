@@ -91,9 +91,13 @@ df3 = pd.DataFrame(datas)
 # %%
 df3.columns
 # %%
-round(df3['idade'].mean(),2)
+df3['idade'].mean()
 # %%
-df3.tail()
+df3['nome'].describe() #em caso de empate de frequencia, o top traz a ordem do cabeçalho ao contrario 
+# %%
+df3['nome'].tail(1)
+# %%
+df3['nome'].iloc[-1]
 # %%
 df3.head()
 # %%
